@@ -1,0 +1,62 @@
+<!-- Default form login -->
+<form class="text-center border border-light p-5">
+
+  <p class="h4 mb-4">Zaloguj się</p>
+
+  <div class="md-form">
+    <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+    <input mdbInput mdbValidate formControlName="emailFormEx" minLength="8" maxLength="25" type="email"
+           class="form-control" id="form9">
+    <label for="form9">Type your e-mail</label>
+    <!-- <mdb-error *ngIf="emailFormEx.invalid && (emailFormEx.dirty || emailFormEx.touched)">Input invalid</mdb-error>
+    <mdb-success *ngIf="emailFormEx.valid && (emailFormEx.dirty || emailFormEx.touched)">Input valid</mdb-success> -->
+  </div>
+
+  <div class="md-form">
+    <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+    <input mdbInput mdbValidate formControlName="passwordFormEx" minLength="10" maxLength="25" type="password"
+           class="form-control" id="form10">
+    <label for="form10">Type your password</label>
+    <!-- <mdb-error *ngIf="passwordFormEx.invalid && (passwordFormEx.dirty || passwordFormEx.touched)">Input invalid
+    </mdb-error>
+    <mdb-success *ngIf="passwordFormEx.valid && (passwordFormEx.dirty || passwordFormEx.touched)">Input valid
+    </mdb-success> -->
+  </div>
+
+  <div class="d-flex justify-content-around">
+    <div>
+      <!-- Remember me -->
+      <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+    </div>
+    <div>
+      <!-- Forgot password -->
+      <a href="">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Sign in button -->
+  <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+
+  <!-- Register -->
+  <p>Not a member?
+    <a href="">Register</a>
+  </p>
+
+  <!-- Social login -->
+  <p>or sign in with:</p>
+
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="facebook"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="twitter"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="linkedin"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="github"></mdb-icon>
+  </a>
+
+</form>
+<!-- Default form login -->
